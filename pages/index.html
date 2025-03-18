@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="head">Student Table</h1>
+        <form action="">
+            <div class="inputs">
+                <input type="text" name="student" id="studentName" placeholder="Enter Student Name">
+                <div class="nameValid">
+                    <ul>
+                        <li id="nameField">*Student name field is required.</li>
+                        <li id="checkNameField">*Student name field must be greater than 3 characters.</li>
+                    </ul>
+                </div>
+                <input type="number" name="age" id="studentAge" placeholder="Enter Student Age">
+                <div class="ageValid">
+                    <ul>
+                        <li id="ageField">*Student age field is required.</li>
+                        <li id="checkAgeField">*Student age must be greater than 18.</li>
+                    </ul>
+                </div>
+            </div>
+            <button id="addStudent" type="button" onclick="">Add Student</button>
+        </form>
+        <table id="table">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
